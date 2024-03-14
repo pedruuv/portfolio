@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Micro+5&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #050505;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: inline-end;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #aa0707;
+}
+
+.download-button{
+    color: #aa0707;
+    border: 2px solid #aa0707;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out
+}
+
+.download-button:hover{
+    background-color: #aa0707;
+    color: #050505;
+}
+
+#introducao {
+    padding: 40px 0;
+    text-align: left; /* Alinhamento à esquerda para todos os elementos */
+    background-color: #050505;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#introducao p,
+#introducao h3::after {
+    margin: 0; /* Removendo margens para garantir alinhamento */
+}
+
+#introducao p {
+    font-size: 1.5em;
+    max-width: 40%;
+    margin: 0;
+}
+
+#introducao h3{
+    font-size: 4em;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.int-container{
+    padding-top: 2em;
+    padding-left: 10em;
+}
+
+.hello{
+    font-size: 1em;
+}
+
+#sobre-mim {
+    padding: 60px;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.sobre-mim-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-mim-text {
+    flex: 0 0 60%; /* Definindo a largura do texto */
+    padding-left: 5%;
+}
+
+.sobre-mim-foto {
+    flex: 0 0 35%; /* Definindo a largura da foto */
+}
+
+.sobre-mim h2,
+.sobre-mim p {
+    margin-bottom: 20px;
+}
+
+#sobre-mim h2 {
+    font-size: 2.3em;
+}
+
+#sobre-mim p {
+    font-size: 1.2em;
+    max-width: 70%;
+}
+
+.sobre-mim-foto {
+    width: 100%; /* Garante que o contêiner tenha a largura total disponível */
+    max-width: 300px; /* Define a largura máxima para o contêiner (ajuste conforme necessário) */
+    overflow: hidden; /* Garante que qualquer conteúdo extra seja cortado */
+    border: 4px solid;
+    border-image: linear-gradient(45deg, #ae1918 50%, #000000 50%);
+    border-image-slice: 1;
+}
+
+.sobre-mim-foto img {
+    width: 100%; /* Garante que a imagem preencha completamente o contêiner */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Corta a imagem para preencher o contêiner mantendo a proporção */
+}
+
+section {
+    padding: 2% 40px 0 40px;
+    padding-bottom: 20%;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#skills{
+    background-color: #050505;
+
+}
+
+#skills h2{
+    font-size: 2em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+#skills h2::after {
+    content: '';
+    position: absolute;
+    left: 12%; /* Ajuste a posição conforme necessário */
+    top: 50%;
+    height: 2px;
+    width: 15%; /* Ajuste a largura conforme necessário */
+    background-color: #ae1918;
+    transform: translateY(-50%);
+}
+
+
+.skill-container {
+    text-align: center;
+}
+
+.skill-card {
+    background-color: #111111;
+    padding: 2%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 150px; /* Ajuste conforme necessário */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    color: #000000;
+}
+
+.skill-card i {
+    font-size: 3em;
+    margin: 5px;
+}
+
+.skill-card h3 {
+    font-size: 1.5em;
+}
+
+#python:hover{
+    background-color: #ffc812;
+}
+
+#ccplusplus:hover{
+    background-color: #0057ff;
+}
+
+#java:hover{
+    background-color: #ababab;
+}
+
+#pentest:hover{
+    background-color: #aa0707;
+}
+
+#bash:hover{
+    background-color: #fff;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects-title {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.projects-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 9%;
+    top: 40%;
+    height: 2px;
+    width: 15%;
+    background-color: #ae1918;
+}
+
+.project {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-icon {
+    font-size: 3em;
+    max-width: fit-content;
+    color: #f42c1d;
+    background: #ae1918;
+    padding: 20px;
+}
+
+.project-info {
+    padding: 20px;
+    background: #111111;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ae1918;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #f42c1d;
+}
+
+#contact{
+    background-color: #050505;
+    height: auto;
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+#contato h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 9%;
+    top: 40%;
+    height: 2px;
+    width: 15%;
+    background-color: #ae1918;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-email {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-email p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-email a {
+    color: #ae1918;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-email a:hover {
+    color: #f42c1d;
+}
+
+input, textarea{
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    font-family: "Lato", sans-serif;
+}
+
+input:focus, textarea:focus {
+    border-color: #aa0707;
+    outline: none;
+}
+
+.social-icons {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    color: #ae1918;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 24px;
+    max-width: fit-content;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: #f42c1d;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+        z-index: 1; /* Garante que o cabeçalho fique acima de outros elementos */
+    }
+
+    #introducao {
+        text-align: center;
+        margin-top: 80px; /* Ajuste conforme necessário para evitar a sobreposição do cabeçalho */
+    }
+
+    #introducao .int-container {
+        padding-left: 10px; /* Adicione um espaçamento à esquerda */
+        padding-right: 10px; /* Adicione um espaçamento à direita */
+    }
+
+    #introducao p {
+        max-width: 100%; /* Garanta que o texto não ultrapasse a largura do contêiner */
+        margin: 0 auto; /* Centralize o texto */
+    }
+
+    #sobre-mim {
+        padding: 40px;
+    }
+
+    .sobre-mim-content {
+        flex-direction: column;
+    }
+
+    .sobre-mim-text, .sobre-mim-foto {
+        flex: 100%; /* Ocupa 100% da largura em telas menores */
+        margin-bottom: 20px;
+    }
+
+    .skill-container {
+        text-align: center;
+    }
+
+    .skill-card {
+        width: 100%; /* Ocupa a largura total */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #skills h2::after {
+        left: 50%;
+        width: 30%;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-title::after {
+        left: 45%;
+        width: 20%;
+    }
+
+    .project {
+        width: 100%; /* Ocupa a largura total */
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%; /* Ocupa a largura total */
+    }
+
+    .social-icons {
+        left: auto;
+        top: auto;
+        transform: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons a {
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        float: none;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 10px; /* Adicione uma margem superior para afastar do botão "Baixar Currículo" */
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px; /* Adicione uma margem inferior entre os itens do menu */
+    }
+
+    .download-button {
+        margin-top: 10px; /* Adicione uma margem superior para afastar do menu */
+    }
+
+    #contato h2::after {
+        top: 30%;
+    }
+
+    #skills h2::after,
+    #projects h2::after,
+    #contato h2::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 40%;
+        height: 2px;
+        width: 40%;
+        background-color: #ae1918;
+        transform: translateX(-50%);
+    }
+
+    #skills h2::after{
+        left: 130%;
+    }
+
+    #projects h2::after,
+    #contato h2::after{
+        left: 140%;
+        width: 60%;
+    }
+
+    #skills h2,
+    #projects h2,
+    #contato h2 {
+        position: relative;
+        display: inline-block;
+        font-size: 2em;
+        margin-bottom: 2em;
+        padding-bottom: 0.5em; /* Ajuste conforme necessário */
+    }
+}
